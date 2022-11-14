@@ -23,9 +23,9 @@
 
         <div class="container p-3">
             <h1 v-if="todoList.length != 0">Todo List</h1>
-            <h1 v-else>La lista è finita</h1>
+            <h1 v-else class="text-center">La lista è finita</h1>
             <ul>
-                <li v-for="(element,index) in todoList" :class="todoList[index].done ? 'text-decoration-line-through' : 'text-dark'">
+                <li v-for="(element,index) in todoList" >
                     {{element.text}}
                     <i class="fa-solid fa-xmark" @click="rimozione(index)"></i>
                 </li>
@@ -35,7 +35,7 @@
         <h1>Todo Completate</h1>
         <div>
             <ul>
-                <li v-for="(element,index) in todoComplete">
+                <li v-for="(element,index) in todoComplete" :class="todoComplete[index].done ? 'text-decoration-line-through' : 'text-dark'" v-if="">
                     <!-- {{todoComplete[index].text}} -->
                     {{element.text}}
                 </li>

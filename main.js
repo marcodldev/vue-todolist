@@ -6,7 +6,7 @@ var app = new Vue({
             text : "latte", done: false
         },
         {
-            text : "uova", done: true
+            text : "uova", done: false
         },
         {
             text : "farina", done: false
@@ -21,8 +21,12 @@ var app = new Vue({
     },
     methods: {
      rimozione (index) {	
+        this.todoList.done = true;
         this.todoComplete.push(this.todoList[index]);
         this.todoList.splice(index, 1);
+
+        
+
      }  
     },
 
