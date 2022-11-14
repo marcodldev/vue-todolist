@@ -25,7 +25,7 @@ var app = new Vue({
         this.todoComplete.push(this.todoList[index]);
         this.todoList.splice(index, 1);
 
-    //     come si cambia il valore di un booleano?
+    //     come si cambia il valore di un booleano? (classi da invertire nella seconda lista)
     //    this.todoComplete.done = true;
 
      },
