@@ -3,16 +3,16 @@ var app = new Vue({
     data: {
       todoList : [
         {
-            name : "latte", done: false
+            text : "latte", done: false
         },
         {
-            name : "uova", done: false
+            text : "uova", done: false
         },
         {
-            name : "farina", done: false
+            text : "farina", done: false
         },
         {
-            name : "anacardi", done: false
+            text : "anacardi", done: false
         },
       ],
       indice: 0,
