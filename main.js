@@ -28,7 +28,10 @@ var app = new Vue({
     //     come si cambia il valore di un booleano?
     //    this.todoComplete.done = true;
 
-     }  
+     },
+     aggiungiRiga () {
+        this.todoList.push({ text: this.nuovoText, done: false });
+     }
     },
 
   })
