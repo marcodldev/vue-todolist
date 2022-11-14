@@ -20,7 +20,7 @@ var app = new Vue({
       todoComplete : [],
     },
     methods: {
-     rimozione (index) {	
+     rimozione_push (index) {	
         
         this.todoComplete.push(this.todoList[index]);
         this.todoList.splice(index, 1);
@@ -28,6 +28,9 @@ var app = new Vue({
     //     come si cambia il valore di un booleano? (classi da invertire nella seconda lista)
     //    this.todoComplete.done = true;
 
+     },
+     rimozione (index) {
+        this.todoComplete.splice(index, 1);
      },
      aggiungiRiga () {
         this.todoList.push({ text: this.nuovoText, done: false });

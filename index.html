@@ -27,7 +27,7 @@
             <ul>
                 <li v-for="(element,index) in todoList">
                     <span>{{element.text}}</span>
-                    <span> <i class="fa-solid fa-xmark" @click="rimozione(index)"></i></span>
+                    <span> <i class="fa-solid fa-xmark" @click="rimozione_push(index)"></i></span>
 
                 </li>
             </ul>
@@ -41,6 +41,8 @@
                     :class="todoComplete[index].done ? '' : 'text-decoration-line-through'" v-if="">
                     <!-- {{todoComplete[index].text}} -->
                     {{element.text}}
+
+                    <i class="fa-solid fa-xmark" @click="rimozione(index)"></i>
                 </li>
             </ul>
         </div>
