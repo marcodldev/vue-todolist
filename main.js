@@ -21,11 +21,12 @@ var app = new Vue({
     },
     methods: {
      rimozione (index) {	
-        this.todoList.done = true;
+        
         this.todoComplete.push(this.todoList[index]);
         this.todoList.splice(index, 1);
 
-        
+    //     come si cambia il valore di un booleano?
+    //    this.todoComplete.done = true;
 
      }  
     },

@@ -18,7 +18,7 @@
 
         <div class="container text-center p-3">
             <input type="text">
-            <button class="btn btn-primary">Bottone</button>
+            <button class="btn btn-primary">Aggiungi</button>
         </div>
 
         <div class="container p-3">
@@ -32,10 +32,11 @@
             </ul>
         </div>
 
-        <h1>Todo Completate</h1>
-        <div>
+        
+        <div class="container p-3">
+            <h1>Todo Completate</h1>
             <ul>
-                <li v-for="(element,index) in todoComplete" :class="todoComplete[index].done ? 'text-decoration-line-through' : 'text-dark'" v-if="">
+                <li v-for="(element,index) in todoComplete" :class="todoComplete[index].done ? '' : 'text-decoration-line-through'" v-if="">
                     <!-- {{todoComplete[index].text}} -->
                     {{element.text}}
                 </li>
