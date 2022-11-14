@@ -18,10 +18,20 @@
             <button class="btn btn-primary">Bottone</button>
         </div>
 
-        <div class="container text-center p-3">
+        <div class="container p-3">
+            <!-- <h1 v-if=>Todo List</h1>
+            <h1 v-else>La lista è finita</h1> -->
             <ul>
-                <li>dd</li>
-                <li>dd</li>
+                <li v-for="element in todoList">{{element.name}} 
+                    <i class="fa-solid fa-xmark"></i>  
+                </li>
+            </ul>
+        </div>
+
+        <h1>Todo Completate</h1>
+        <div>
+            <ul>
+                <li></li>
             </ul>
         </div>
 
