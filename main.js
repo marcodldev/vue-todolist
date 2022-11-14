@@ -6,7 +6,7 @@ var app = new Vue({
             text : "latte", done: false
         },
         {
-            text : "uova", done: false
+            text : "uova", done: true
         },
         {
             text : "farina", done: false

@@ -22,13 +22,13 @@
             <!-- <h1 v-if=>Todo List</h1>
             <h1 v-else>La lista è finita</h1> -->
             <ul>
-                <li v-for="element in todoList">{{element.text}} 
+                <li v-for="element in todoList" :class="todoList.done ? 'text-dark' : 'text-decoration-line-through'">{{element.text}} 
                     <i class="fa-solid fa-xmark"></i>  
                 </li>
             </ul>
         </div>
 
-        <h1>Todo Completate</h1>
+        <h1 >Todo Completate</h1>
         <div>
             <ul>
                 <li></li>
